@@ -1,0 +1,9 @@
+server:
+  port: 9999
+cxf:
+  path: /hello
+  servlet.init:
+    service-list-path: /info
+  jaxrs:
+    # 配置扫描服务，必须要设置为true，否则找不到要暴露的服务
+    component-scan: true
